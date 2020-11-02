@@ -7,9 +7,12 @@ Collaborators: Briana Figueroa & Sayema Islam
 <br/>
 Group # 4
 <br/>
+Chosen Language: Java
+<br/>
 
 Entity-Relationship Diagram:
-    <br/>Coming soon!
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coming soon!
 <br/>
+
 Link to Project Presentation Video:
-    <br/>Coming soon!
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coming soon!
