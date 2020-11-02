@@ -1,12 +1,15 @@
 # CS623-GroupProject
 Course Name: CS623-Database Management Systems, Fall 2020
+<br/>
 Professor: Christelle Scharff
-
+<br/>
 Collaborators: Briana Figueroa & Sayema Islam
+<br/>
 Group # 4
+<br/>
 
 Entity-Relationship Diagram:
-    Coming soon!
-
+    <br/>Coming soon!
+<br/>
 Link to Project Presentation Video:
-    Coming soon!
+    <br/>Coming soon!
