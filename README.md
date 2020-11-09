@@ -11,7 +11,8 @@ Language: Java
 <br/>
 
 Entity-Relationship Diagram:
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coming soon!
+<br/>
+![alt text](https://github.com/saye2427/CS623-GroupProject/blob/main/Project_ERD.png?raw=true)
 <br/>
 
 Link to Project Presentation Video:
@@ -19,4 +20,4 @@ Link to Project Presentation Video:
 <br/>
 
 Summary of Work:
-<br/>To be updated soon!
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To be updated soon!
