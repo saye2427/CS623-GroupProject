@@ -13,20 +13,29 @@ Language: Java
 ## Entity-Relationship Diagram (ERD):
 ![alt text](https://github.com/saye2427/CS623-GroupProject/blob/main/Project_ERD.png?raw=true)
 <br/>
+
+##### Relations
+**Product to Stock**
+<br/>
 Rule 0:
-Product to Stock:
-    Product(prodId, pname, price ...)
-    Stock(prodId, depId, quantity...)
-Stock to Depot:
-    Stock(prodId,depId, quantity...)
-    Depot(depId, addr, volume...)
-Rule2:
-Product to Stock:
-    Product(prodID, pname, price) B
-    Stock(prodId, depId, quantity, product.prodId) A
-Stock to Depot:
-    Stock(prodId,depId, quantity, Depot.depId) A
-    Depot(depId, addr, volume) B
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product(prodId, pname, price...)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stock(prodId, depId, quantity...)
+<br/>
+Rule 2:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product(prodID, pname, price)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stock(prodId, depId, quantity, <em>Product</em>).prodId)
+<br/>
+
+**Stock to Depot:**
+<br/>
+Rule 0:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stock(prodId, depId, quantity...)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Depot(depId, addr, volume...)
+<br/>
+Rule 2:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stock(prodId, depId, quantity, <em>Depot</em>.depId)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Depot(depId, addr, volume)
+<br/>
     
 ## Link to Project Presentation Video:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coming soon!
