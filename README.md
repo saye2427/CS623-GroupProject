@@ -10,7 +10,7 @@ Group # 4
 Language: Java
 <br/>
 
-## Entity-Relationship Diagram:
+## Entity-Relationship Diagram (ERD):
 ![alt text](https://github.com/saye2427/CS623-GroupProject/blob/main/Project_ERD.png?raw=true)
 <br/>
 
