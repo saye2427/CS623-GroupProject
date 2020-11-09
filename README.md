@@ -16,3 +16,7 @@ Entity-Relationship Diagram:
 
 Link to Project Presentation Video:
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coming soon!
+<br/>
+
+Summary of Work:
+<br/>To be updated soon!
