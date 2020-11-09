@@ -14,7 +14,7 @@ Language: Java
 ![alt text](https://github.com/saye2427/CS623-GroupProject/blob/main/Project_ERD.png?raw=true)
 <br/>
 
-##### Relations
+### Relations
 **Product to Stock**
 <br/>
 Rule 0:
@@ -23,7 +23,7 @@ Rule 0:
 <br/>
 Rule 2:
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product(prodID, pname, price)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stock(prodId, depId, quantity, <em>Product</em>).prodId)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stock(prodId, depId, quantity, <em>Product</em>.prodId)
 <br/>
 
 **Stock to Depot:**
