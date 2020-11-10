@@ -42,18 +42,18 @@ Rule 2:
 <br/>
 
 ## Summary of Work:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+We started by first setting up the schema for our project's database in postgre as can be seen from the screenshots below:
+<br/>
 ![alt text](https://github.com/saye2427/cs623-team4project/blob/main/PostgreSQLCode1.png?raw=true)
-<br/>
-
 ![alt text](https://github.com/saye2427/cs623-team4project/blob/main/PostgreSQLCode2.png?raw=true)
-<br/>
-
 ![alt text](https://github.com/saye2427/cs623-team4project/blob/main/PostgreSQLCode3.png?raw=true)
-<br/>
-
 ![alt text](https://github.com/saye2427/cs623-team4project/blob/main/PostgreSQLCode4.png?raw=true)
-<br/>
-
 ![alt text](https://github.com/saye2427/cs623-team4project/blob/main/PostgreSQLCode5.png?raw=true)
 <br/>
+(N.B. All this code can also be found in our team4project.sql file in the repository.)
+<br/>
+We then created a java file/class to execute our assigned transaction--the renaming of one of the depots' IDs--by first connecting to the postgre database, and then implementing the ACID properties of atomicity and isolation (consistency is taken care of by our real-world execution of the transaction, and durability by the committing of these changes to the postgre database itself).
+<br/>
+Because the Stock table has a foreign key that depends on the Depot table, neither of the tables could be updated without somehow manipulating the foreign keys. Thus we first considered implementing a transaction where the foreign key of stock relating to depot was dropped, and then reinstated using a CASCADE command before updating only <em>one</em> table to demonstrate that all these commands were necessary to execute the transaction (i.e. all or nothing) but given the nature of CASCADE, it was decided that this was not a good way to demonstrate atomicity.
+<br/>
+So instead, we decided to execute the transaction by first dropping the foreign key of stock, then updating BOTH the Depot and Stock tables to show the importance of both atomicity <em>and consistency</em>, as in the real world, renaming an ID in one table should also mean that the corresponding IDs in any other tables are updated/renamed as well (consistency), and both of these statements should be executed at once (atomicity). Thus in essence, we somewhat mimicked the way a CASCADE would work, but through commands to both tables instead of simply one, in order to highlight the transaction's ACID compliance.
