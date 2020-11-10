@@ -50,7 +50,7 @@ We started by first setting up the schema for our project's database in postgre 
 ![alt text](https://github.com/saye2427/cs623-team4project/blob/main/PostgreSQLCode4.png?raw=true)
 ![alt text](https://github.com/saye2427/cs623-team4project/blob/main/PostgreSQLCode5.png?raw=true)
 <br/>
-<em>(N.B. All this code can also be found in our team4project.sql file in the repository.)</em>
+<em>(N.B. All this code can also be found in our Team4Project.sql file in the repository.)</em>
 <br/>
 <br/>
 We then created a java file/class to execute our assigned transaction--the renaming of one of the depots' IDs--by first connecting to the postgre database, and then implementing the ACID properties of atomicity and isolation (consistency is taken care of by our real-world execution of the transaction, and durability by the committing of these changes to the postgre database itself).
