@@ -16,7 +16,7 @@ public class PostgreSQLT4ACID {
 		
 		//Connect to the default database with credentials
 		//Enter your own machine's port #/dbName for postgre after localhost
-		String url = "jdbc:postgresql://localhost:5432/team4project";
+		String url = "jdbc:postgresql://localhost:5432/dbname";
 		//Enter your own machine's root here
 		String root = "postgres";
 		//Enter your own postgre password here
@@ -74,7 +74,7 @@ public class PostgreSQLT4ACID {
 		}
 		
 		//Since autocommit is disabled, we manually commit changes since the last rollback
-		//and release any database locks help by the Connection object
+		//and release any database locks held by the Connection object
 		connect.commit();
 		query.close();
 		connect.close();
