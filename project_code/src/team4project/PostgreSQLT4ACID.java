@@ -16,11 +16,11 @@ public class PostgreSQLT4ACID {
 		
 		//Connect to the default database with credentials
 		//Enter your own machine's port #/dbName for postgre after localhost
-		String url = "jdbc:postgresql://localhost:5432/team4project";
+		String url = "jdbc:postgresql://localhost:5432/dbname";
 		//Enter your own machine's root here
 		String root = "postgres";
 		//Enter your own postgre password here
-		String password = "Game24champ!";
+		String password = "password";
 				
 		Connection connect = DriverManager.getConnection(url, root, password);
 		
