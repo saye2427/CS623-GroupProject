@@ -16,11 +16,11 @@ public class PostgreSQLT4ACID {
 		
 		//Connect to the default database with credentials
 		//Enter your own machine's port #/dbName for postgre after localhost
-		String url = "jdbc:postgresql://localhost:5432/dbname";
+		String url = "jdbc:postgresql://localhost:5432/team4project";
 		//Enter your own machine's root here
 		String root = "postgres";
 		//Enter your own postgre password here
-		String password = "password";
+		String password = "Game24champ!";
 				
 		Connection connect = DriverManager.getConnection(url, root, password);
 		
@@ -44,10 +44,16 @@ public class PostgreSQLT4ACID {
 			//However, a CASCADE is required to change depId since it is a foreign key constraint for Stock
 			//Thus, to demonstrate Atomicity here, we must update the foreign key constraint that already exists, now with a CASCADE (i.e. DROP it and ADD it again)
 			//And then simply UPDATE Depot (and show that it also automatically updates Stock due to the dependency and the fact that all these statements will be executed at once)
+//			query.execute("ALTER TABLE Stock DROP CONSTRAINT fk_stock_depot");
+//			query.execute("ALTER TABLE Stock ADD CONSTRAINT fk_stock_depot FOREIGN KEY(depId) REFERENCES Depot(depId) ON UPDATE CASCADE");
+//			query.executeUpdate("UPDATE Depot SET depId = 'dd1' WHERE depId = 'd1'");
+//			//query.executeUpdate("UPDATE Stock SET depId = 'dd1' WHERE depId = 'd1'");
+			
+			//Alternate method - if not using CASCADE, we can just drop FKs, make the changes, and then reinstate the FK constraints
 			query.execute("ALTER TABLE Stock DROP CONSTRAINT fk_stock_depot");
-			query.execute("ALTER TABLE Stock ADD CONSTRAINT fk_stock_depot FOREIGN KEY(depId) REFERENCES Depot(depId) ON UPDATE CASCADE");
-			query.executeUpdate("UPDATE Depot SET depId = 'dd1' WHERE depId = 'd1'");
-			//query.executeUpdate("UPDATE Stock SET depId = 'dd1' WHERE depId = 'd1'");
+			query.executeUpdate("UPDATE Depot SET depId = 'd1' WHERE depId = 'dd1'");
+			query.executeUpdate("UPDATE Stock SET depId = 'd1' WHERE depId = 'dd1'");
+			query.execute("ALTER TABLE Stock ADD CONSTRAINT fk_stock_depot FOREIGN KEY(depId) REFERENCES Depot(depId)");
 			
 			//To show/print the changes, we need to use ResultSet
 			ResultSet depot = query.executeQuery("SELECT * FROM Depot");
