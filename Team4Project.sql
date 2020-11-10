@@ -3,7 +3,7 @@ CREATE TABLE Depot (depId VARCHAR(10), addr VARCHAR(30), volume INTEGER);
 CREATE TABLE Stock (prodId VARCHAR(10), depId VARCHAR(10), quantity INTEGER);
 
 ALTER TABLE Product ADD CONSTRAINT pk_product PRIMARY KEY (prodId);
-ALTER TABLE Depot ADD CONSTRAINT pk_depot PRIMARY KEY (DepId);
+ALTER TABLE Depot ADD CONSTRAINT pk_depot PRIMARY KEY (depId);
 ALTER TABLE Stock ADD CONSTRAINT pk_stock PRIMARY KEY (prodId, depId);
 
 ALTER TABLE Stock ADD CONSTRAINT fk_stock_product FOREIGN KEY(prodId) REFERENCES Product(prodId);
