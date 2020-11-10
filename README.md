@@ -42,4 +42,18 @@ Rule 2:
 <br/>
 
 ## Summary of Work:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To be updated soon!
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+![alt text](https://github.com/saye2427/cs623-team4project/blob/main/PostgreSQLCode1.png?raw=true)
+<br/>
+
+![alt text](https://github.com/saye2427/cs623-team4project/blob/main/PostgreSQLCode2.png?raw=true)
+<br/>
+
+![alt text](https://github.com/saye2427/cs623-team4project/blob/main/PostgreSQLCode3.png?raw=true)
+<br/>
+
+![alt text](https://github.com/saye2427/cs623-team4project/blob/main/PostgreSQLCode4.png?raw=true)
+<br/>
+
+![alt text](https://github.com/saye2427/cs623-team4project/blob/main/PostgreSQLCode5.png?raw=true)
+<br/>
