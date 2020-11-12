@@ -38,7 +38,7 @@ Rule 2:
 <br/>
     
 ## Link to Project Presentation Video:
-[a link](https://drive.google.com/file/d/1Q-f99M6x1hR4f1Qd7MEVJXxbXhFKsc50/view?usp=sharing)
+[Team 4 Presentation](https://drive.google.com/file/d/1Q-f99M6x1hR4f1Qd7MEVJXxbXhFKsc50/view?usp=sharing)
 <br/>
 
 ## Summary of Work:
